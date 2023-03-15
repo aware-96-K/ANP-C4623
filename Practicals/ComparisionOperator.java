@@ -4,31 +4,25 @@ import java.util.Scanner;
 
 public class ComparisionOperator
 {
-	public static void main(String[] args) 
-	{
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a First Number");
-		int num1=sc.nextInt();
-		System.out.println("Enter a Second Number");
-		int num2=sc.nextInt();
-		
-		 // == operator
-	    System.out.println(num1 == num2);  
+	public static void main(String[] args) {
+	    Scanner input = new Scanner(System.in);
 
-	    // != operator
-	    System.out.println(num1 != num2); 
+	    System.out.print("Enter a number: ");
+	    int num1 = input.nextInt();
 
-	    // > operator
-	    System.out.println(num1 > num2);  
+	    System.out.print("Enter another number: ");
+	    int num2 = input.nextInt();
 
-	    // < operator
-	    System.out.println(num1 < num2);  
+	    System.out.println("num1 = " + num1);
+	    System.out.println("num2 = " + num2);
 
-	    // >= operator
-	    System.out.println(num1 >=num2);  
-
-	    // <= operator
-	    System.out.println(num1 <= num2); 
-	  }
-
+	    // Comparison operators example
+	    if (num1 == num2) {
+	      System.out.println(num1 + " is equal to " + num2);
+	    } else if (num1 > num2) {
+	      System.out.println(num1 + " is greater than " + num2);
+	    } else {
+	      System.out.println(num1 + " is less than " + num2);
+	    }
+	}
 }
