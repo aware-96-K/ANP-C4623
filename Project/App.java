@@ -11,8 +11,8 @@ public class App
 		BloodDao dao = new BloodDao();	    
 	    // Create a new user entity
 	    Blood blood = new Blood();
-	    blood.setName("John Smith");
-	    blood.setBloodGroup("B+");
+	    blood.setName("Pranita Aware");
+	    blood.setBloodGroup("B");
 	   dao.saveBlood(blood);
 	    
 	    blood.setName("abc xyz");
